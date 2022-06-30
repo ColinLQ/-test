@@ -1,24 +1,24 @@
 ## Project setup
 ```
 asdf install
-yarn install
+pnpm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn start
+pnpm start
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+pnpm build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
-yarn lint:ts
-yarn lint:style
+pnpm lint
+pnpm lint:ts
+pnpm lint:style
 ```
 
 ### Customize configuration
