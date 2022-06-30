@@ -11,13 +11,13 @@ cache:
 
 before_script:
   - asdf install
-  - yarn install
+  - pnpm install
 
 test:
   script:
-    - yarn run lint
-    - yarn run lint:ts
-    - yarn run lint:style
+    - pnpm run lint
+    - pnpm run lint:ts
+    - pnpm run lint:style
   except:
     - develop
     - staging
@@ -26,8 +26,8 @@ test:
 # deploy_staging:
 #   stage: deploy
 #   script:
-#     - yarn staging
-#     - yarn deploy:staging
+#     - pnpm staging
+#     - pnpm deploy:staging
 #   only:
 #     - staging
 #   tags:
@@ -36,8 +36,8 @@ test:
 # deploy_production:
 #   stage: deploy
 #   script:
-#     - yarn build
-#     - yarn deploy:production
+#     - pnpm build
+#     - pnpm deploy:production
 #   only:
 #     - master
 #   tags:
