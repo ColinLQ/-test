@@ -5,8 +5,6 @@ import router from './router';
 import * as Sentry from '@sentry/vue';
 import { BrowserTracing } from '@sentry/tracing';
 
-import component from '@/components';
-
 import 'normalize.css';
 import '@/styles/global.scss';
 
@@ -36,6 +34,5 @@ if (VUE_APP_ENV !== 'development' && VUE_SENTRY_DSN) {
   });
 }
 
-app.use(component);
 app.use(router).mount('#app');
 

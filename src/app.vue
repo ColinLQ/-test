@@ -1,15 +1,17 @@
 <template>
   <div class="global-layout">
-    <GlobalHeader />
+    <Header />
     <main class="main">
       <router-view :key="$route.fullPath" />
     </main>
-    <GlobalFooter />
+    <Footer />
   </div>
 </template>
 
 <script lang="ts" setup>
   import { onMounted } from 'vue';
+  import Footer from '@/components/footer.vue';
+  import Header from '@/components/header.vue';
 
   onMounted(async () => {});
 
