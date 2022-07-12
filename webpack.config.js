@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     // new BundleAnalyzerPlugin()
 
-    process.env.VUE_APP_ENV !== 'development' && new SentryPlugin({
+    process.env.VUE_APP_ENV !== 'development' && process.env.VUE_SENTRY_DSN && new SentryPlugin({
       release: process.env.VUE_APP_ENV,
       include: path.resolve('dist/js'),
       environment: process.env.VUE_APP_ENV,
