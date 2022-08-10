@@ -8,12 +8,6 @@ import { BrowserTracing } from '@sentry/tracing';
 import 'normalize.css';
 import '@/styles/global.scss';
 
-declare module '@vue/runtime-core' {
-  interface ComponentCustomProperties {
-    $get: any
-  }
-}
-
 const { VUE_SENTRY_DSN, VUE_APP_ENV } = process.env;
 const app = createApp(App);
 app.config.globalProperties.$get = _.get;
@@ -35,4 +29,3 @@ if (VUE_APP_ENV !== 'development' && VUE_SENTRY_DSN) {
 }
 
 app.use(router).mount('#app');
-

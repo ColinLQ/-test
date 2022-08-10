@@ -27,20 +27,6 @@ module.exports = {
           fontViewportUnit: 'rem',
           minPixelValue: 1
         });
-
-    config.module
-      .rule('vue')
-      .test(/\.vue$/)
-      .use('vue-loader')
-        .loader('vue-loader')
-        .options({
-          compilerOptions: {
-            isCustomElement: tag => {
-              return tag === 'df-messenger';
-            }
-          }
-        });
-
   },
   publicPath: '/',
   runtimeCompiler: true,

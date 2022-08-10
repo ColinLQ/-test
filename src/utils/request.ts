@@ -18,7 +18,7 @@ import { authStore } from '@/stores';
 // };
 
 const request = axios.create({
-  baseURL: urlJoin(process.env.VUE_APP_WEB_API, '/app_api/v1'),
+  baseURL: urlJoin(String(process.env.VUE_APP_WEB_API), '/app_api/v1'),
   timeout: 30000,
   headers: { 'Content-Type': 'application/json' },
   paramsSerializer(params: object) {
