@@ -6,10 +6,11 @@ declare global  {
   }
 }
 
-declare module '@vue/runtime-core' {
-  interface ComponentCustomProperties {
-    $get: any
-  }
-}
+// declare module '@vue/runtime-core' {
+// declare module 'vue' {
+//   interface ComponentCustomProperties {
+//     $get: any
+//   }
+// }
 // 如果有一个import引入，就不需要export｛｝
 export {}
