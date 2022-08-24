@@ -8,6 +8,8 @@
   import { onMounted } from 'vue';
 
   onMounted(() => {});
+
+  localStorage.setExpireItem('', '', 123);
 </script>
 
 <style lang="scss" scoped>

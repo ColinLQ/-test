@@ -1,3 +1,4 @@
+import 'storage-extends';
 import { createApp } from 'vue';
 import _ from 'lodash';
 import App from './app.vue';
